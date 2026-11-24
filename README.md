@@ -56,4 +56,4 @@ En `frontend/src/shared/api/api.ts`, Axios envía la cookie y transforma errores
 
 **Repositorio público:** https://github.com/gabito00/FOODSTORE
 
-**Video:** [VIDEO](https://leautneduar-my.sharepoint.com/:v:/g/personal/gabriel_montana_tupad_utn_edu_ar/IQCw9VI96aJNTpZHHXRv5962AQiG1yQ9q9i_J3AGQoYGtRw?e=o45YrK)
+**Video:** [VIDEO](https://leautneduar-my.sharepoint.com/:v:/g/personal/gabriel_montana_tupad_utn_edu_ar/IQA9MbZ7cYngRqZBLbe87W5_AT0_20LbIMewkqGRaN7w6ck?e=QDZNE9)
