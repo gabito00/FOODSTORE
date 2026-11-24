@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-6xl p-6; }
+  .title { @apply mb-6 text-3xl font-bold; }
+  .card { @apply rounded-xl border border-slate-200 bg-white p-5 shadow-sm; }
+  .btn { @apply inline-block cursor-pointer rounded-lg bg-indigo-700 px-5 py-3 font-semibold text-white hover:bg-indigo-800 disabled:cursor-not-allowed disabled:bg-slate-400; }
+}
+
+@theme {
+  --color-brand: #4f46e5;
+  --color-brand-hover: #4338ca;
+  --color-secondary: #64748b;
+  --color-success: #047857;
+  --color-error: #be123c;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-surface-subtle: #f1f5f9;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-text-soft: #64748b;
+  --color-text-faint: #94a3b8;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+  --color-overlay: #020617;
+  --color-on-brand: #ffffff;
+}
+
+.dark {
+  --color-surface: #111827;
+  --color-surface-muted: #0f172a;
+  --color-surface-subtle: #1e293b;
+  --color-text: #f8fafc;
+  --color-text-muted: #cbd5e1;
+  --color-text-soft: #94a3b8;
+  --color-text-faint: #64748b;
+  --color-border: #334155;
+  --color-border-strong: #475569;
+}
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--color-text);
+  background: linear-gradient(
+    180deg,
+    var(--color-surface-muted) 0%,
+    var(--color-surface-subtle) 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded-xl border border-border-strong bg-surface px-4 py-3 font-normal text-text outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20;
+  }
+}

@@ -1,0 +1,25 @@
+# Entorno local
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Frontend
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Bases locales y logs
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
